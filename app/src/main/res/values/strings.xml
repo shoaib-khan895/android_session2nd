@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">session2</string>
+    <string name="msg">Welcome to "TO THE NEW"</string>
+    <string name="Signup">Signup</string>
+    <string name="phone" />
+    <string name="PhoneHint" hint="phone">Enter your phone number</string>
+    <string name="email" />
+    <string name="EmailHint" hint="email">Enter your Email</string>
+    <string name="name" />
+    <string name="NameHint" hint="name">Enter your name</string>
+    <string name="password" />
+    <string name="PassHint" hint="password">Enter your password</string>
+
+    <string name="urlhint" hint="url">Enter URL</string>
+    <string name="Button" hint="Button">get permission</string>
+    <string name="Buttonsub" hint="Buttonsub">submit URL</string>
+    <string name="Password1" hint="password1">your password is</string>
+    <string name="phone1" hint="phone1">your phone number is</string>
+    <string name="email1" hint="email1">your email is</string>
+    <string name="name1" hint="name1">your name is</string>
+
+</resources>
