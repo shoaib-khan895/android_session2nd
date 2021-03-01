@@ -62,7 +62,10 @@ class NextscreenActivity : AppCompatActivity() {
 
             button2.setOnClickListener {
 
-                val url = "http://www.google.com"
+                val x=findViewById<EditText>(R.id.editText5)
+
+
+                val url = x.text.toString()
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(url)
                 startActivity(intent)
