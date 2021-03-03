@@ -62,11 +62,19 @@ class NextscreenActivity : AppCompatActivity() {
 
             button2.setOnClickListener {
 
-                val url = "http://www.google.com"
+              val x=findViewById<EditText>(R.id.editText5)
+
+                if (x.text.toString().contains(".")){
+
+                    Toast.makeText(this,"Error in url",Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
+
+
+                val url = "http://www."+x.text.toString()+".com"
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(url)
                 startActivity(intent)
-            }
 
 
 
