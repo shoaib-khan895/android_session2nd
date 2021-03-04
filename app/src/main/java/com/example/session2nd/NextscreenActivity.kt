@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -61,10 +62,9 @@ class NextscreenActivity : AppCompatActivity() {
 
 
             button2.setOnClickListener {
+                val x=findViewById<EditText>(R.id.editText5)
 
-              val x=findViewById<EditText>(R.id.editText5)
-
-                if (x.text.toString().contains(".")){
+                if (x.text.toString().isNullOrEmpty()){
 
                     Toast.makeText(this,"Error in url",Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
@@ -75,6 +75,7 @@ class NextscreenActivity : AppCompatActivity() {
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(url)
                 startActivity(intent)
+            }
 
 
 
